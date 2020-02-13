@@ -1,0 +1,37 @@
+{% extends 'portfolio_app/base.html' %}
+{% load static %}
+{% block content %}
+
+<link href="{% static 'portfolio_app/style.css' %}" rel="stylesheet">
+<script src="https://kit.fontawesome.com/aecff166e4.js" crossorigin="anonymous"></script>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card middle">
+        <div class="front">
+          <img src="{% static 'portfolio_app/logo.png' %}" alt="">
+        </div>
+        <div class="back">
+          <div class="back-content middle">
+            <h2>Hey There</h2>
+            <span>Yeppers</span>
+            <div class="sm">
+              <a href="#"><i class="fas fa-air-freshener"></i></a>
+              <a href="#"><i class="fas fa-anchor"></i></a>
+              <a href="#"><i class="fas fa-american-sign-language-interpreting"></i></a>
+              <a href="#"><i class="fas fa-ankh"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+{% endblock %}
